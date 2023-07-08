@@ -62,8 +62,49 @@
   border-width:1px;
   border-style:solid;
   border-color:rgb(192, 190, 190);
-  margin-left:-1;
-  margin-right:8px;
+  margin-left:-1px;
+  margin-right:10px;
+
+  
+}
+.search-button,
+.voice-search-button,
+.upload-icon-container,
+.youtube-apps-container,
+.notification-icon-container {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+
+}
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-container .tooltip,
+.notification-icon-container .tooltip{
+  font-family:Roboto,Arial;
+  position:absolute;
+  color:white;
+  background-color:gray;
+  padding-left:4px;
+  padding-right:4px;
+  padding-bottom:8px;
+  padding-top:8px;
+  border-radius:2px;
+  font-size:12px;
+  bottom:-30px;
+  opacity:0;
+  transition:0.15s;
+  pointer-events:none;
+  white-space:nowrap;
+}
+.search-button:hover .tooltip,.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-container:hover .tooltip,
+.notification-icon-container:hover .tooltip{
+  opacity:1;
+
 }
 .search-icon{
   height:25px;
